@@ -38,4 +38,4 @@ jobs:
       - name: run
         env:
           COMPRAS_HUNTER_KEY: ${{ secrets.HUNTER_KEY }}
-        run: python -m app.vigilante --minutes 13 --quiet > /dev/null 2>&1 || true
+        run: python -m app.vigilante --minutes 13 --quiet --stores falabella > /dev/null 2>&1 || true
